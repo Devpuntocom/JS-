@@ -8,14 +8,14 @@
 
 body{
     min-height: 100vh;
-    background-color: rgb(225, 124, 71);
+    background-color: #3CA6A6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .calculadora{
-    background-color: rgb(242, 219, 161);
+    background-color: #026773;
     color: rgb(73, 76, 78);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -37,7 +37,7 @@ body{
 }
 
 .boton{
-    background-color: rgb(6, 3, 36);
+    background-color: #012E40;
     color: rgb(255, 255, 255);
     border: 0;
     padding: 1rem;
@@ -50,7 +50,7 @@ body{
 }
 
 .boton:hover{
-    background-color: rgb(221, 180, 76);
+    background-color: #F2E3D5;
 
 }
 

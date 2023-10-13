@@ -20,6 +20,9 @@ botones.forEach(boton => {
             }
             return;
         }
+        if(/[+\-*/]/.test(pantalla.textContent.slice(-1)) && /[+\-*/]/.test(botonOn)){
+            throw new Error("ERROR");
+        }
 
         if(boton.id === "igual"){
             try{
@@ -28,10 +31,8 @@ botones.forEach(boton => {
                 pantalla.textContent = "!error!"
             }
             return;
-
         }
-
-        if(pantalla.textContent === "0"){
+        if(pantalla.textContent === "0" || pantalla.textContent === "ERROR"){
             pantalla.textContent = botonOn;
         }else{
             pantalla.textContent += botonOn;
