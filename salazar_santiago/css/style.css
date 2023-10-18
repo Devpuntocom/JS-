@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    background-color: #000000;
+}
+
+.reloj{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../img/Reloj.png");
+    background-size: cover;
+    border: 1rem solid rgb(48, 138, 241);
+    border-radius: 50vh;
+    box-shadow: inset 0px 0px 30px 5px rgb(83, 152, 231);
+}
+
+.reloj::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50vh;
+    z-index: 1000;
+}
+
+.hora{
+    width: 150px;
+    height: 150px;
+}
+.minuto{
+    width: 190px;
+    height: 190px;
+}
+.segundo{
+    width: 250px;
+    height: 250px;
+}
+
+/* before es para crear elementos dentro del css*/
+.hora::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background-color: beige;
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background-color: rgb(193, 193, 112);
+    z-index: 11;
+    border-radius: 50vh;
+}
+.segundo::before{
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background-color: rgb(69, 193, 137);
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.hora,.minuto,.segundo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+
+}
